@@ -26,7 +26,7 @@ body {
 /* ================= Nav ========================= */
 .header {
     content: "";
-    background: url("images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
+    background: url("./images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
 }
 
 .header_top {
