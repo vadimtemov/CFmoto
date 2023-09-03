@@ -129,7 +129,7 @@ h1 {
     position: absolute;
     width: 31px;
     height: 31px;
-    background: url("/images/icons/arrow.svg") 0 0 / 100%;
+    background: url("../images/icons/arrow.svg") 0 0 / 100%;
     top: 11px;
     right: 12px;
     
