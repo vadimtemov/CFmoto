@@ -54,8 +54,8 @@ overlay.addEventListener('click', () => {
 
 const swiper = new Swiper('.gallery__routes', {
   // direction: 'horizontal',
-  loop: true,
-  speed: 1000,
+  // loop: true,
+  speed: 700,
   slidesPerView: 'auto',
   spaceBetween: 22,
   
