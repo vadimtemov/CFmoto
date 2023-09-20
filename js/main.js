@@ -56,8 +56,8 @@ const swiper = new Swiper('.gallery__routes', {
   // direction: 'horizontal',
   // loop: true,
   speed: 700,
-  slidesPerView: 'auto',
-  spaceBetween: 22,
+  spaceBetween: 20,
+  slidesPerView: 2.2,
   
   grabCursor: true,
   
