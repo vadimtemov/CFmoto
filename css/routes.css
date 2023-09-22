@@ -176,10 +176,12 @@
 .swiper-container {
     width: 40%;
     height: 400px;
+
+    /* width: 50%; */
 }
 
 .gallery__routes-wrapper  {
-    height: 91%;
+    height: 90%;
     align-items: center;
 }   
 
@@ -191,10 +193,12 @@
     transition: all .7s;
 }
 
-.swiper-slide-active {
+.swiper-slide-active.gallery__routes-slide  {
     height: 360px;
     width: 360px;
     transition: all .7s;
+    
+    /* transform: scale(1.44, 1.2); */
 }
 
 .routes-slide--img {
