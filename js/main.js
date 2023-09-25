@@ -56,6 +56,10 @@ new Swiper(".swiper-container", {
   slidesPerView: 'auto',
   spaceBetween: 22,
   speed: 700,
+
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
   
   pagination: {
     el: ".swiper-pagination",
