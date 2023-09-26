@@ -50,23 +50,44 @@ overlay.addEventListener('click', () => {
   document.body.classList.remove('body--open-menu')
 })
 
-// slider-routes
+// ============== slider-routes ===========
 
-new Swiper(".swiper-container", {
-  slidesPerView: 'auto',
-  spaceBetween: 22,
-  speed: 700,
-
-  observer: true,
-  observeParents: true,
-  observeSlideChildren: true,
+// new Swiper(".swiper-container", {
+//   slidesPerView: 'auto',
+//   spaceBetween: 22,
+//   speed: 700,
   
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+
+//   observer: true,
+//   observeParents: true,
+//   observeSlideChildren: true,
+  
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+
+// ====================================
+
+const swiper = new Swiper('.testimonials__slider', {
+
+  spaceBetween: 22,
+  slidesPerView: 1.1,
+  speed: 700,
+  width: 320,
+  // centeredSlides: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
