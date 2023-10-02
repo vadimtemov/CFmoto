@@ -180,4 +180,41 @@ const swiper = new Swiper('.route__slider', {
     }
   });
 
-  // =========================================
+  // =============== Gallery_slider=====================
+
+  const photo = new Swiper('.photo__swiper', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 22,
+    centeredSlides: true,
+    initialSlide: 2,
+    speed: 700,
+    grabCursor: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.photo-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.photo-button-prev',
+      prevEl: '.photo-button-next',
+    },
+
+    breakpoints: {
+      900: {
+        slidesPerView: 4,
+      },
+      800: {
+        slidesPerView: 3,
+      },
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      300: {
+        slidesPerView: 1,
+      },
+    }
+  });
