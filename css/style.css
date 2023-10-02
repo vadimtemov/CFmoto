@@ -2,7 +2,8 @@
 @import url(modal_application.css);
 @import url(modal_excursion.css);
 @import url(modal_info.css);
-
+@import url(test.css);
+@import url(photo.css);
 
 /* ----------------------------------------------------------------------- */
 .body {
@@ -68,6 +69,13 @@
     border-radius: 9px;
     font-size: 14px;
     font-weight: 600;
+    line-height: 130%;
+}
+
+h2 {
+    color: #121214;
+    font-size: 36px;
+    font-weight: 700;
     line-height: 130%;
 }
 
@@ -380,6 +388,18 @@ h1 {
     .route-description--extended {
         padding-right: 37px;
     }
+
+    /* ----------- Modal_excursion ----------- */
+
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 112px;
+    }
+
+    .priceBike-list {
+        display: grid;
+        grid: repeat(2, 50%)/ repeat(3, 30%);
+        gap: 20px 20px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -459,6 +479,45 @@ h1 {
     .modal_application_close path {
         fill: #037E8C;
     }
+
+    /* -------------- Modal_excursion ----------------- */
+    .modal_excursion-close {
+        top: 0;
+        color: #037E8C;
+        background: none;
+    }
+
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 50px;
+    }
+
+    .priceBike-list {
+        gap: 10px 10px;
+    }
+
+    .priceBike-card-img {
+        max-height: 200px;
+    }
+
+    .online-booking-inner {
+        padding: 55px 0 98px 50px;
+    }
+
+    .input,
+    .input-counter {
+        width: 320px;
+    }
+
+    .input-icon-arrow_down {
+        right: 40px;
+    }
+
+    /* ------------ Test ------------ */
+
+    .test-text {
+        font-size: 17px;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -496,7 +555,7 @@ h1 {
         display: none;
     }
 
-    /* ---------------slide---------------*/
+    /* ---------------Slide_excursion---------------*/
     .route {
         display: block;
         padding-bottom: 80px;
@@ -520,11 +579,59 @@ h1 {
         max-height: 300px;
     } */
 
-    /* ---------------slide---------------*/
+    /* --------------- Modal_excursion ---------------*/
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 30px;
+    }
 
-    
+    .card-model {
+        font-size: 12px;
+    }
+
+    .card-price {
+        font-size: 16px;
+    }
+
+    .priceBike-list {
+        grid: repeat(2, 50%)/ repeat(3, 32%);
+        gap: 10px 10px;
+    }
+
+    .online-booking-inner {
+        padding: 55px 0 98px 30px;
+    }
+
+    .online-booking-title {
+        width: 325px;
+        margin: 0 auto;
+    }
+
+    .form-booking {
+        grid: repeat(4, 80px)/repeat(1, 320px);
+        justify-content: center; 
+    }
+
+    .input-icon-arrow_down {
+        right: 10px;
+    }
+
+    /* -------------- Test ---------------- */
+
+    .test__title {
+        font-size: 28px;
+    }
+
+    .test-text {
+        font-size: 14px;
+    }
+
+    /* ------------- modal в меню, оствить заявку ----------------- */
     .modal_application_window {
         width: 80vw;
+    }
+
+    .modal_application_btn {
+        width: 100%;
     }
 }
 
@@ -546,6 +653,10 @@ h1 {
     }
 
     /* ----- наши маршруты -------- */
+    .routes_inner {
+        padding: 25px 0 80px 0;
+    }
+
     .route-description,
     .route-description--extended {
         padding-left: 25px;
@@ -559,7 +670,23 @@ h1 {
     .route {
         padding-bottom: 60px;
     }
-    /* -------- slide ------ */
+    /* -------- Modal_excursion --------- */
+
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 10px;
+    }
+
+    .priceBike-title {
+        font-size: 22px;
+    }
+
+    .priceBike-list {
+        grid: repeat(3, 33%)/ repeat(2, 48%);
+    }
+
+    .online-booking-inner {
+        padding: 55px 0 98px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -603,14 +730,28 @@ h1 {
         width: 90%;
     }
 
-
-    /* -------------------------- */
-    .modal_application_window {
-        width: 90vw;
+    /* --------Modal_excursion---------------- */
+    .modal_excursion-window-inner {
+        padding: 47px 5px 30px 10px;
+    }
+    
+    .route-description {
+        padding-left: 15px;
     }
 
-    .modal_application_btn {
-        width: 100%;
+    /* --------- Test ----------------------- */
+    .test-button {
+        width: 90%;
+    }
+
+    /* --------- Photo ----------------------- */
+    .photo__inner {
+        padding: 50px 0px;
+    }
+
+    /* ----------- modal в меню, оставить заявку--------------- */
+    .modal_application_window {
+        width: 90vw;
     }
 }
 
@@ -642,7 +783,7 @@ h1 {
 
     /* ---------- наши маршруты ------------ */
     .routes_inner {
-        padding: 0 0 118px 0;;
+        padding: 0 0 70px 0;;
     }
 
     .title-routes--text {
@@ -652,7 +793,7 @@ h1 {
     }
 
     .route-description {
-        padding-left: 25px;
+        padding-left: 15px;
     }
 
     .route-title {
@@ -661,6 +802,27 @@ h1 {
 
     .route-btn_details {
         margin-top: 10px;
+    }
+
+    /* --------- Modal_excursion ---------- */
+    .modal_excursion-window-inner {
+        padding: 47px 5px 30px 5px;
+    }
+
+    .priceBike-list {
+        grid: none;
+    }
+
+    .form-booking {
+        grid: repeat(4, 80px)/repeat(1, 300px);
+    }
+
+    .input, .input-counter {
+        width: 300px;
+    }
+
+    .input-icon-arrow_down {
+        right: 10px;
     }
 
     /* ------------------------ */

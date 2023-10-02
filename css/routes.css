@@ -251,7 +251,7 @@
     transition: all .7s;
 }
 
-.swiper-slide-active {
+.swiper-slide-active.route__slide {
     /* transform: scale(0.9, 0.9); */
     width: 360px;
     max-height: 360px;
@@ -262,6 +262,11 @@
     text-align: start;
     height: 2%;
 }
+
+/* .swiper-pagination.route__pagination {
+    text-align: start;
+    height: 2%;
+} */
 
 .swiper-pagination-bullet {
     background: #121214;;
