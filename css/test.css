@@ -5,7 +5,7 @@
     align-items: center;
     height: 352px;
     background: #121214;
-    background-image: url('../images/background/bg-test.png');
+    background-image: url("../images/background/bg-test.png");
     color: #fff;
     text-align: center;
 }
@@ -25,4 +25,10 @@
 .test-button {
     background: #037E8C;
     padding: 14px 43px;
+}
+
+.test-button:hover {
+    background: #fff;
+    color: #037E8C;
+    border: 1.5px solid #037E8C;
 }

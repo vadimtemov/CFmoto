@@ -1,0 +1,27 @@
+.questions {
+    background: url("../images/background/bg-damper.png");
+}
+.questions-title {
+    padding-top: 71px;
+    padding-bottom: 48px;
+}
+
+.appeal-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.appeal p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn-appeal {
+    display: inline-block;
+    padding: 13px 33px;
+    height: 45px;
+    border-radius: 9px;
+    background: #037E8C;
+    color: #fff;
+}

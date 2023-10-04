@@ -4,6 +4,14 @@
 @import url(modal_info.css);
 @import url(test.css);
 @import url(photo.css);
+@import url(video.css);
+@import url(team.css);
+@import url(conditions.css);
+@import url(specialoffers.css);
+@import url(certificate.css);
+@import url(questions.css);
+
+
 
 /* ----------------------------------------------------------------------- */
 .body {
@@ -77,6 +85,7 @@ h2 {
     font-size: 36px;
     font-weight: 700;
     line-height: 130%;
+    text-align: center;
 }
 
 /* ============================================================== */
@@ -348,9 +357,31 @@ h1 {
     .modal_application_title {
         margin-left: -137px;
     }
+    /* --------- Team ---------------- */
+    .team {
+        background: url("../images/background/bg-bumperСanister.png") -80px 0px / 120% no-repeat;
+    }
+
+    /* ----------- Conditions ------------ */
+    .conditions {
+        background: #F4F4F4 url("../images/background/bg-mountains.png") 0px -250px no-repeat;
+        background-size: auto;
+    }
+
+    /* ------------ Specialoffers --------------*/
+    .specialoffers-card {
+        height: 280px;
+    }
+    
+    /* ---------- Certificate ------------ */
+    .certificate {
+        background: url("../images/background/bg-mountains.png") 0px -210px no-repeat;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 1200px) {
+
     .container {
         padding: 0px 50px;
     }
@@ -390,7 +421,6 @@ h1 {
     }
 
     /* ----------- Modal_excursion ----------- */
-
     .modal_excursion-window-inner {
         padding: 47px 5px 74px 112px;
     }
@@ -400,9 +430,47 @@ h1 {
         grid: repeat(2, 50%)/ repeat(3, 30%);
         gap: 20px 20px;
     }
+
+    /* ------------ Specialoffers --------------*/
+    .specialoffers-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .specialoffers-card {
+        max-width: 750px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ---------- Certificate ------------ */
+    .certificate {
+        background: url("../images/background/bg-mountains.png") 0px -210px no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+
+    .certificate-subtitle {
+        width: 100%;
+    }
+
+    .certificate-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-certificate {
+        padding-bottom: 20px;
+    }
+
+    .card-certificate {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 900px) {
+
     .nav {
         position: fixed;
         inset: 0;
@@ -470,7 +538,6 @@ h1 {
         padding-right: 10px;
     }
 
-
     /* --------------------------------- */
     .modal_application_close {     
         top: 7px;
@@ -518,9 +585,33 @@ h1 {
         font-size: 17px;
     }
 
+    /* ---------- Team --------------- */
+    .img-employee {
+        height: 200px;
+    }
+
+    .text-employee {
+        margin-left: 12px;
+    }
+
+    .position-employee {
+        font-size: 16px;
+    }
+
+    /* ------------ Conditions ----------- */
+    .conditions-wrapper {
+        display: grid;
+        grid: repeat(3, 35%) / repeat(2, 50%);
+        gap: 20px;
+        padding-bottom: 81px;
+    }
+
 }
 
 @media (max-width: 750px) {
+    .container {
+        padding: 0px 40px;
+    }
     .header_logo {
         z-index: 11;
     }
@@ -573,11 +664,6 @@ h1 {
     .swiper-pagination {
         display: none;
     }
-    
-    /* .route__slide {
-        max-width: 200px;
-        max-height: 300px;
-    } */
 
     /* --------------- Modal_excursion ---------------*/
     .modal_excursion-window-inner {
@@ -633,6 +719,47 @@ h1 {
     .modal_application_btn {
         width: 100%;
     }
+
+     /* ---------- Video --------------- */
+    
+    .video__inner {
+        height: 594px;
+        padding: 0 30px;
+    }
+
+    /* --------- Team ------------------ */
+    .team-cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card-employee {
+        max-width: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ------- Conditions -------------- */
+    .conditions-text {
+        padding: 9px 10px 10px 60px;
+    }
+
+    /* --------- Specialoffers --------- */
+    .specialoffers-wrapper {
+        padding-bottom: 50px;
+    }
+
+    .specialoffers-card {
+        height: 250px;
+    }
+
+    /* ---------- Certificate ------------ */
+    .card-certificate {
+        display: none;
+    }
+    .card-certificate-two {
+        display: block;
+    }
 }
 
 @media (max-width: 600px) {
@@ -687,6 +814,50 @@ h1 {
     .online-booking-inner {
         padding: 55px 0 98px 0;
     }
+
+      /* ---------- Video --------------- */
+    .video-container {
+        max-height: 300px;
+    }
+    .video__inner {
+        height: 480px;
+        padding: 0 20px;
+    }
+
+    /* ------------------ Team ----------------- */
+    .team-cards {
+        padding-bottom: 40px;
+    }
+    .card-employee {
+        max-width: 280px;
+    }
+
+    /* ------------ Conditions ----------- */
+    .conditions-title {
+        padding: 30px 0 30px;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .conditions-wrapper {
+        display: grid;
+        grid: repeat(6, 20%) / repeat(1, 100%);
+        gap: 20px;
+        padding-bottom: 285px;
+    }
+
+    /* ----------- Certificate ------------ */
+    .certificate-subtitle {
+        padding-bottom: 30px;
+    }
+
+    .description-certificate {
+        width: 100%;
+    }
+    
+    .text-certificate {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -719,8 +890,8 @@ h1 {
     .excursions-title {
         font-size: 12px;
     }
-    /* -------------наши маршруты--------------- */
 
+    /* -------------наши маршруты--------------- */
     .route-btn_details {
         width: 90%;
         margin-bottom: 20px;
@@ -746,12 +917,28 @@ h1 {
 
     /* --------- Photo ----------------------- */
     .photo__inner {
-        padding: 50px 0px;
+        padding: 50px 0px 10px;
+    }
+
+    /* --------- Specialoffers --------- */
+    .specialoffers-img {
+        display: none;
     }
 
     /* ----------- modal в меню, оставить заявку--------------- */
     .modal_application_window {
         width: 90vw;
+    }
+
+    /* ----------- Specialoffers ------------- */
+    .specialoffers-title {
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .specialoffers-wrapper {
+        padding-bottom: 20px;
     }
 }
 
@@ -836,6 +1023,15 @@ h1 {
 
     .input {
         width: 300px;
+    }
+
+    /* ----------- Specialoffers ------------- */
+    .specialoffers-title {
+        font-size: 28px;
+    }
+
+    .specialoffers-description {
+        padding-left: 8px;      
     }
 }
 
