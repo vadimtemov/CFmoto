@@ -10,6 +10,9 @@
 @import url(specialoffers.css);
 @import url(certificate.css);
 @import url(questions.css);
+@import url(addservices.css);
+@import url(contacts.css);
+@import url(footer.css);
 
 
 
@@ -378,6 +381,16 @@ h1 {
         background: url("../images/background/bg-mountains.png") 0px -210px no-repeat;
         background-size: cover;
     }
+
+    /* ------------ Questions --------------- */
+    .questions__inner {
+        padding: 0 0 85px;
+    }
+
+    /* --------------- Contacts ------------------ */
+    .contacts__inner {
+        padding-left: 18px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -466,6 +479,35 @@ h1 {
 
     .card-certificate {
         margin-top: 40px;
+    }
+
+    /* -------- Questions ----------- */
+    .questions-accordion {
+        padding-right: 38px;
+    }
+
+    /* ----------- Addservices ------------ */
+    .addservices-wrapper {
+        gap: 16px;
+    }
+
+    /* ------------- Contacts -------------- */
+    
+.contacts__inner {
+    padding-left: 5px;
+}
+    
+    .contacts-communication-text {
+        padding-left: 4px;
+    }
+
+    /* -------------- Footer --------------- */
+    .footer-logo {
+        padding-left: 0;
+    }
+
+    .footer-menu-list {
+        gap: 25px;
     }
 }
 
@@ -604,6 +646,66 @@ h1 {
         grid: repeat(3, 35%) / repeat(2, 50%);
         gap: 20px;
         padding-bottom: 81px;
+    }
+
+    /* -------- Questions ----------- */
+    .questions-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .questions-accordion {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+    /* ----------- Addservices ------------ */
+
+    .addservices-wrapper {
+        grid: repeat(2, 300px) / repeat(4, 24%);
+        gap: 12px;
+        padding: 10px 0 50px;
+    }
+    
+    .text-addservices {
+        color: #037E8C;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 130%;
+        padding: 10px 10px 0 24px;
+    }
+
+    /* ------------- Contacts -------------- */
+    .contacts__inner {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    
+    .contacts-box {
+        padding-bottom: 30px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .contacts-map {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* ----------- Footer ------------- */
+    .footer-menu-box {
+        margin: auto;
+    }
+
+    .footer-logo {
+        padding-left: 20px;
+    }
+
+    .footer-menu-list {
+        grid: repeat(2, auto) / repeat(3, auto);
+        column-gap: 60px;
     }
 
 }
@@ -760,6 +862,30 @@ h1 {
     .card-certificate-two {
         display: block;
     }
+
+    /* ----------- Addservices ------------ */
+    .addservices-wrapper {
+        grid: repeat(2, 280px) / repeat(4, 24%);
+        gap: 10px;
+        padding: 0 0 50px;
+    }
+
+    .card-addservices img {
+        height: 205px;
+    }
+    .text-addservices {
+        font-size: 12px;
+        padding: 10px 10px 0 5px;
+    }
+
+    /* ---------- Cobtacts ------------- */
+    .contacts-communication {
+        display: grid;
+        grid: repeat(2, 45%) / repeat(2, 57%);
+        row-gap: 30px;
+        column-gap: 15px;
+    } 
+    
 }
 
 @media (max-width: 600px) {
@@ -858,6 +984,49 @@ h1 {
     .text-certificate {
         font-size: 16px;
     }
+
+     /* ----------- Addservices ------------ */
+    .addservices-title {
+        font-size: 28px;
+    }
+    .addservices-wrapper {
+        grid: repeat(4, 26%) / repeat(2, 50%);
+        gap: 5px;
+        padding: 0 0 70px;
+    }
+
+    .text-addservices {
+        font-size: 14px;
+        padding: 10px 10px 0 5px;
+    }
+
+    /* ---------- Cobtacts ------------- */
+    .contacts-title {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    
+    .contacts-communication {
+        display: grid;
+        grid: repeat(4, 20%) / repeat(1, 100%);
+        row-gap: 20px;
+        column-gap: 0;
+        padding-bottom: 30px;
+    }
+    
+    .contacts-map {
+        display: none;
+    }
+
+    /* ----------- Footer ------------ */
+    .footer-menu {
+        padding: 8px 0 8px;
+    }
+
+    .footer-menu-list {
+        grid: repeat(3, auto) / repeat(2, auto);
+        column-gap: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -939,6 +1108,20 @@ h1 {
 
     .specialoffers-wrapper {
         padding-bottom: 20px;
+    }
+    /* -------------- Certificate --------------- */
+    .certificate-wrapper {
+        padding-bottom: 50px;
+    }
+
+    /* ------------ Questions --------------- */
+    .questions-title {
+        padding-top: 50px;
+    }
+    
+    /* -------------- Footer ----------------- */
+    .footer-logo {
+        display: none;
     }
 }
 
@@ -1032,6 +1215,18 @@ h1 {
 
     .specialoffers-description {
         padding-left: 8px;      
+    }
+
+    /* -------- Questions ----------- */
+    .questions-title {
+        font-size: 30px;
+    }
+
+    .appeal p {
+        width: 100%;
+        
+        font-size: 14px;
+        
     }
 }
 
