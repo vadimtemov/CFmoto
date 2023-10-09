@@ -122,6 +122,7 @@ function closeModalInfo(e) {
 
 const btnBurger = document.querySelector('.burger-icon')
 const overlay = document.querySelector('.overlay')
+const navList = document.querySelector('.nav_list')
 
 btnBurger.addEventListener('click', () => {
   if (!document.body.classList.contains('body--open-menu')) {
@@ -136,6 +137,11 @@ btnBurger.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   overlay.classList.remove('overlay--show'),
   document.body.classList.remove('body--open-menu')
+})
+
+navList.addEventListener('click', ()=> {
+  overlay.classList.remove('overlay--show'),
+  body.classList.remove('body--open-menu')
 })
 
 
@@ -247,3 +253,7 @@ const swiper = new Swiper('.route__slider', {
       }
     });
   });
+
+
+
+  
